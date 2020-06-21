@@ -57,9 +57,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    // overflow: hidden;
-    grid-template-areas: "header" "content" "footer";
-    grid-template-rows: auto 1fr auto;
     background: #fff;
     footer {
         height: 20px;
