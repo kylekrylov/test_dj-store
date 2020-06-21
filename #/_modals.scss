@@ -1,5 +1,5 @@
 .modal-pop {
-    display: none;
+    // display: none;
     //
     height: 407px;
     width: 538px;
@@ -8,7 +8,8 @@
     border-radius: 16px;
     position: absolute;
     left: calc(50% - 269px);
-    top: calc(50% - 200px);
+    bottom: -410px;
+    transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
     button.close {
         // !! заменить крестик 
         position: absolute;
@@ -37,22 +38,22 @@
             transform: rotate(45deg);
         }
     }
+    h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+    }
     form {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        h2 {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 29px;
-        }
-        p {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 160%;
-        }
         input,
         button {
             height: 48px;
@@ -82,5 +83,55 @@
     }
     &.active {
         display: block;
+        height: 407px;
+        bottom: calc(50% - 200px);
+    }
+    @media (max-width: 768px) {
+        border-radius: 12px;
+        height: 343px;
+        width: 346px;
+        padding: 32px 16px;
+        left: calc(50% - 183px);
+        bottom: -343px;
+        button.close {
+            top: 20px;
+            right: 30px;
+            width: 18px;
+            height: 14px;
+        }
+        h2 {
+            font-size: 21px;
+            line-height: 26px;
+        }
+        p {
+            font-size: 12px;
+        }
+        form {
+            input,
+            button {
+                height: 42px;
+                width: 311px;
+                margin: 16px;
+                padding: 12px;
+            }
+            input {
+                margin: 8px auto;
+                border-radius: 9px;
+                font-size: 14px;
+                line-height: 114%;
+            }
+            button {
+                background: #397DFF;
+                margin: 8px auto;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &.active {
+            height: 343px;
+            bottom: calc(50% - 161px);
+        }
     }
 }

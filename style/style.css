@@ -58,9 +58,10 @@ body {
     background: #333;
     margin-top: auto; }
     body footer p {
+      font-size: 20px;
       text-align: center;
-      color: #333; }
-  @media (max-width: 1024px) {
+      color: #444; }
+  @media (max-width: 1200px) {
     body.lock {
       overflow: hidden; }
     body .content.opacity {
@@ -241,7 +242,8 @@ header {
       background: #2B2D3A; }
     @media (max-width: 1200px) {
       .header_burger {
-        display: block; } }
+        display: block;
+        overflow: auto; } }
 
 @media (max-width: 1200px) {
   .header {
@@ -249,7 +251,8 @@ header {
     padding: 0 30px 0 16px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    overflow: auto; }
     .header_menu {
       display: none; }
     .header_menu-mob {
@@ -261,12 +264,16 @@ header {
       -ms-flex-direction: column;
       flex-direction: column;
       width: 375px;
-      height: auto;
+      max-height: 600px;
       padding: 0px 16px 0 16px;
       background: #EBEEF5;
-      position: absolute;
+      position: fixed;
       right: -375px;
-      top: 90px; }
+      top: 90px;
+      overflow: auto;
+      -webkit-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
+      -o-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
+      transition: all 0.3s cubic-bezier(0, 0.9, 1, 1); }
       .header_menu-mob.active {
         right: 0px; }
       .header_menu-mob li {
@@ -335,7 +342,6 @@ header {
               left: -18px; } }
 
 .modal-pop {
-  display: none;
   height: 407px;
   width: 538px;
   padding: 32px 42px;
@@ -343,7 +349,10 @@ header {
   border-radius: 16px;
   position: absolute;
   left: calc(50% - 269px);
-  top: calc(50% - 200px); }
+  bottom: -410px;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
+  -o-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
+  transition: all 0.3s cubic-bezier(0, 0.9, 1, 1); }
   .modal-pop button.close {
     position: absolute;
     background: #fff;
@@ -368,6 +377,16 @@ header {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
+  .modal-pop h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px; }
+  .modal-pop p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%; }
   .modal-pop form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -379,16 +398,6 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .modal-pop form h2 {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 29px; }
-    .modal-pop form p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 160%; }
     .modal-pop form input,
     .modal-pop form button {
       height: 48px;
@@ -413,7 +422,48 @@ header {
       line-height: 22px;
       color: #FFFFFF; }
   .modal-pop.active {
-    display: block; }
+    display: block;
+    height: 407px;
+    bottom: calc(50% - 200px); }
+  @media (max-width: 768px) {
+    .modal-pop {
+      border-radius: 12px;
+      height: 343px;
+      width: 346px;
+      padding: 32px 16px;
+      left: calc(50% - 183px);
+      bottom: -343px; }
+      .modal-pop button.close {
+        top: 20px;
+        right: 30px;
+        width: 18px;
+        height: 14px; }
+      .modal-pop h2 {
+        font-size: 21px;
+        line-height: 26px; }
+      .modal-pop p {
+        font-size: 12px; }
+      .modal-pop form input,
+      .modal-pop form button {
+        height: 42px;
+        width: 311px;
+        margin: 16px;
+        padding: 12px; }
+      .modal-pop form input {
+        margin: 8px auto;
+        border-radius: 9px;
+        font-size: 14px;
+        line-height: 114%; }
+      .modal-pop form button {
+        background: #397DFF;
+        margin: 8px auto;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px; }
+      .modal-pop.active {
+        height: 343px;
+        bottom: calc(50% - 161px); } }
 
 .block-slider {
   height: 624px;
