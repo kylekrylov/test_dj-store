@@ -54,12 +54,12 @@ input {
 
 // p::selection {}
 body {
-    position: relative;
-    display: grid;
-    overflow: auto;
-    grid-template-areas: "header" "content" "footer";
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    // position: relative;
+    // display: grid;
+    // overflow: auto;
+    // grid-template-areas: "header" "content" "footer";
+    // grid-template-rows: auto 1fr auto;
+    // min-height: 100vh;
     background: #fff;
     @media (max-width: 1024px) {
         &.lock {
@@ -71,7 +71,10 @@ body {
         }
     }
     .content {
-        margin-top: 60px;
+        margin-top: 90px;
         transition: all 0.5s ease 0.5s;
+        @media (max-width: 1200px) {
+            margin-top: 115px;
+        }
     }
 }
