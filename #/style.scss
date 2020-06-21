@@ -1,0 +1,60 @@
+@import 'null';
+@import 'header';
+// @import 'footer';
+.block-slider {
+    height: 624px;
+    background: url(../img/bgr1.jpg) no-repeat center;
+}
+
+.modal-pop1 {
+    height: 407px;
+    width: 538px;
+    padding: 32px 42px;
+    background: #fff;
+    border-radius: 16px;
+    position: absolute;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    button.close {
+        // !! заменить крестик 
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p,
+        h2 {}
+        input,
+        button {
+            height: 48px;
+            width: 454px;
+            margin: 16px;
+            padding: 15px;
+        }
+        input {
+            margin: 16px auto;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 9px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 114%;
+        }
+        button {
+            background: #397DFF;
+            margin: 16px auto;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+}

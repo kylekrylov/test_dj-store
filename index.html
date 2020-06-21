@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test for dj-store</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header_logo">
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <ul class="header_menu">
+                <li><a class="menu-a" href="#">Главная</a></li>
+                <li> <a class="menu-a" href="#">Проекты</a></li>
+                <li> <a class="menu-a" href="#">Услуги</a></li>
+                <li> <a class="menu-a" href="#">О компании</a></li>
+                <li> <a class="menu-a" href="#" style="width: 134px;">Готовые решения</a></li>
+                <li> <a class="menu-a" href="#">Контакты</a></li>
+                <li class="header-contact">
+                    <img src="img/header-mail.svg " alt="telethone ">
+                    <a href="mailto:info@sld-store.ru">info@sld-store.ru</a>
+                </li>
+                <li class="header-contact">
+                    <img src="img/header-tel.svg" alt="telethone ">
+                    <p>
+                        <a href="modal-call" class="modal-call "> Обратный звонок</a>
+                        <a href="tel:88126156279 ">8 812 615-62-79</a>
+                    </p>
+                </li>
+            </ul>
+            <div class="header_burger ">
+                <span></span>
+            </div>
+
+            <ul class="header_menu-mob">
+                <li> <img src="img/home.svg" alt="">
+                    <a class="menu-a" href="#">Главная</a></li>
+                <li> <img src="img/projects.svg" alt=""><a class="menu-a" href="#">Проекты</a></li>
+                <li> <img src="img/lamp.svg" alt=""><a class="menu-a" href="#">Услуги</a></li>
+                <li> <img src="img/about company.svg" alt=""><a class="menu-a" href="#">О компании</a></li>
+                <li> <img src="img/gotovie resheniya.svg" alt=""><a class="menu-a" href="#">Готовые решения</a></li>
+                <li> <img src="img/map-pin.svg" alt=""><a class="menu-a" href="#">Контакты</a></li>
+                <li class="mob_contact">
+                    <button>Заполнить бриф</button>
+                    <p>Напишите нам</p>
+                    <a href="mailto:info@sld-store.ru"><img src="img/header-mail.svg " alt="telethone ">info@sld-store.ru</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content ">
+        <div class="block-slider">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing </p>
+        </div>
+    </div>
+    <footer></footer>
+    <div class="modal-pop1">
+        <button class="close">X</button>
+        <h2>
+            Готовы обсудить проект?
+        </h2>
+        <p>Заполните форму ниже и мы свяжемся с вами.</p>
+        <form>
+            <input name="name" type="name" alt="Name" placeholder="Имя*" pattern="[A-Za-z]+|[А-ЯЁа-яё]+" maxlength="22" required>
+            <input name="phone " type="phone " alt="Phone " placeholder="Телефон*" pattern="[\+]\d{1}\[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" minlength="16 " maxlength="16 " required>
+            <button type="submit ">Отправить</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+</body>
+
+</html>

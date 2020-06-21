@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+    outline: none;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    // font-family: 'Montserrat', sans-serif;
+}
+
+a,
+a:visited,
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    // font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+p,
+a,
+button,
+input {
+    border: none;
+    text-decoration: none;
+}
+
+// p::selection {}
+body {
+    position: relative;
+    display: grid;
+    overflow: auto;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background: #fff;
+    @media (max-width: 1024px) {
+        &.lock {
+            overflow: hidden;
+        }
+        .content.opacity {
+            opacity: 0.1;
+            transition: all 0.5s ease 0s;
+        }
+    }
+    .content {
+        margin-top: 60px;
+        transition: all 0.5s ease 0.5s;
+    }
+}
