@@ -44,12 +44,29 @@ input {
   text-decoration: none; }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  grid-template-areas: "header" "content" "footer";
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   background: #fff; }
+  body footer {
+    height: 20px;
+    background: #333;
+    margin-top: auto; }
+    body footer p {
+      text-align: center;
+      color: #333; }
   @media (max-width: 1024px) {
     body.lock {
       overflow: hidden; }
     body .content.opacity {
-      opacity: 0.1;
       -webkit-transition: all 0.5s ease 0s;
       -o-transition: all 0.5s ease 0s;
       transition: all 0.5s ease 0s; } }
@@ -206,12 +223,12 @@ header {
       transition: transform 0.5s cubic-bezier(0.18, 0.89, 0, 1.97) 0.5s, top 0.5s ease 0s, bottom 0.5s ease 0s, height 0.5s ease 0s;
       transition: transform 0.5s cubic-bezier(0.18, 0.89, 0, 1.97) 0.5s, top 0.5s ease 0s, bottom 0.5s ease 0s, height 0.5s ease 0s, -webkit-transform 0.5s cubic-bezier(0.18, 0.89, 0, 1.97) 0.5s; }
     .header_burger.active:before {
-      top: 9px;
+      top: 6px;
       -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
     .header_burger.active:after {
-      bottom: 9px;
+      bottom: 6px;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
@@ -250,8 +267,10 @@ header {
       padding: 0px 16px 0 16px;
       background: #EBEEF5;
       position: absolute;
-      right: 0;
+      right: -375px;
       top: 90px; }
+      .header_menu-mob.active {
+        right: 0px; }
       .header_menu-mob li {
         width: 100%;
         height: 72px;
@@ -317,11 +336,8 @@ header {
               position: relative;
               left: -18px; } }
 
-.block-slider {
-  height: 624px;
-  background: url(../img/bgr1.jpg) no-repeat center; }
-
-.modal-pop1 {
+.modal-pop {
+  display: none;
   height: 407px;
   width: 538px;
   padding: 32px 42px;
@@ -330,12 +346,31 @@ header {
   position: absolute;
   left: calc(50% - 269px);
   top: calc(50% - 200px); }
-  .modal-pop1 button.close {
+  .modal-pop button.close {
     position: absolute;
     background: #fff;
-    top: 10px;
-    right: 20px; }
-  .modal-pop1 form {
+    top: 20px;
+    right: 30px;
+    width: 18px;
+    height: 14px; }
+    .modal-pop button.close:before, .modal-pop button.close:after {
+      content: "";
+      position: absolute;
+      background-color: #2B2D3A;
+      width: 100%;
+      height: 2px;
+      border-radius: 23px; }
+    .modal-pop button.close:before {
+      top: 6px;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .modal-pop button.close:after {
+      bottom: 6px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .modal-pop form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -346,23 +381,23 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .modal-pop1 form h2 {
+    .modal-pop form h2 {
       font-style: normal;
       font-weight: 600;
       font-size: 24px;
       line-height: 29px; }
-    .modal-pop1 form p {
+    .modal-pop form p {
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 160%; }
-    .modal-pop1 form input,
-    .modal-pop1 form button {
+    .modal-pop form input,
+    .modal-pop form button {
       height: 48px;
       width: 454px;
       margin: 16px;
       padding: 15px; }
-    .modal-pop1 form input {
+    .modal-pop form input {
       margin: 16px auto;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 9px;
@@ -370,7 +405,7 @@ header {
       font-weight: normal;
       font-size: 16px;
       line-height: 114%; }
-    .modal-pop1 form button {
+    .modal-pop form button {
       background: #397DFF;
       margin: 16px auto;
       border-radius: 8px;
@@ -379,3 +414,9 @@ header {
       font-size: 18px;
       line-height: 22px;
       color: #FFFFFF; }
+  .modal-pop.active {
+    display: block; }
+
+.block-slider {
+  height: 624px;
+  background: url(../img/bgr1.jpg) no-repeat center; }
