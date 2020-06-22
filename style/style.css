@@ -481,23 +481,69 @@ header {
   display: -ms-flexbox;
   display: flex; }
 
-.electro_voice0,
-.electro_voice1 {
+.electro-voice0,
+.electro-voice1 {
   width: 50vw;
-  height: 32.3vw; }
+  height: 32.3vw;
+  max-height: 620px; }
 
-.electro_voice0 {
+.electro-voice0 {
   background: url(../img/electro_voice0.jpg) 0 0/100% auto no-repeat; }
 
-.electro_voice1 {
-  background: url(../img/Electro_Voice_EVID0.png) 20% 5%/10% no-repeat, url(../img/Electro_Voice_EVID1.png) 80% 5%/10% no-repeat, url(../img/electro_voice1.jpg) 0 0/100% auto no-repeat; }
-
-.electro_voice1 {
+.electro-voice1 {
+  background: url(../img/Electro_Voice_EVID0.png) 20% 5%/10% no-repeat, url(../img/Electro_Voice_EVID1.png) 80% 5%/10% no-repeat, url(../img/electro_voice1.jpg) 0 0/100% auto no-repeat;
   position: relative; }
-  .electro_voice1 img {
+
+.modal_electro-voice {
+  position: absolute;
+  top: 10%; }
+  .modal_electro-voice img {
+    height: 4vw;
+    max-height: 68px; }
+  .modal_electro-voice img:nth-child(2) {
     position: absolute;
-    left: 20%;
-    top: 5%; }
+    top: 0;
+    display: none; }
+  .modal_electro-voice_hover-block {
+    position: absolute;
+    bottom: 50px;
+    right: -20px;
+    width: 352px;
+    background: #fff;
+    padding: 17px 24px;
+    border-radius: 10px;
+    display: none; }
+    .modal_electro-voice_hover-block h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 132%; }
+    .modal_electro-voice_hover-block ul li {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 142%;
+      margin: 5px 20px;
+      color: #2B2D3A;
+      list-style-image: url(../img/ellipse-modal.svg); }
+    .modal_electro-voice_hover-block img {
+      position: absolute;
+      height: 66px;
+      top: 12px;
+      right: 36px; }
+  .modal_electro-voice:hover img:nth-child(2), .modal_electro-voice:active img:nth-child(2) {
+    display: block; }
+  .modal_electro-voice:hover .modal_electro-voice_hover-block, .modal_electro-voice:active .modal_electro-voice_hover-block {
+    display: block;
+    height: 180px; }
+
+.modal_electro-voice:nth-child(1) {
+  left: 20%; }
+  .modal_electro-voice:nth-child(1) .modal_electro-voice_hover-block {
+    right: -126px; }
+
+.modal_electro-voice:nth-child(2) {
+  right: 20%; }
 
 .block-slider {
   height: 620px;

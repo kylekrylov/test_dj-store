@@ -5,26 +5,87 @@
     display: flex;
 }
 
-.electro_voice0,
-.electro_voice1 {
+.electro-voice0,
+.electro-voice1 {
     width: 50vw;
     height: 32.3vw;
+    max-height: 620px;
 }
 
-.electro_voice0 {
+.electro-voice0 {
     background: url(../img/electro_voice0.jpg) 0 0/100% auto no-repeat;
 }
 
-.electro_voice1 {
+.electro-voice1 {
     background: url(../img/Electro_Voice_EVID0.png) 20% 5%/10% no-repeat, url(../img/Electro_Voice_EVID1.png) 80% 5%/10% no-repeat, url(../img/electro_voice1.jpg) 0 0/100% auto no-repeat;
+    position: relative;
 }
 
-.electro_voice1 {
-    position: relative;
+.modal_electro-voice {
+    position: absolute;
+    top: 10%;
     img {
-        position: absolute;
-        // height: 100%;
-        left: 20%;
-        top: 5%;
+        height: 4vw;
+        max-height: 68px;
     }
+    img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        display: none;
+    }
+    &_hover-block {
+        position: absolute;
+        bottom: 50px;
+        right: -20px;
+        width: 352px;
+        // height: 180px;
+        background: #fff;
+        padding: 17px 24px;
+        border-radius: 10px;
+        display: none;
+        h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 132%;
+        }
+        ul {
+            li {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 142%;
+                margin: 5px 20px;
+                color: #2B2D3A;
+                list-style-image: url(../img/ellipse-modal.svg);
+            }
+        }
+        img {
+            position: absolute;
+            height: 66px;
+            top: 12px;
+            right: 36px;
+        }
+    }
+    &:hover,
+    &:active {
+        img:nth-child(2) {
+            display: block;
+        }
+        .modal_electro-voice_hover-block {
+            display: block;
+            height: 180px;
+        }
+    }
+}
+
+.modal_electro-voice:nth-child(1) {
+    left: 20%;
+    .modal_electro-voice_hover-block {
+        right: -126px;
+    }
+}
+
+.modal_electro-voice:nth-child(2) {
+    right: 20%;
 }
