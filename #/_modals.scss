@@ -1,6 +1,5 @@
 .modal-pop {
     display: none;
-    //
     height: 407px;
     width: 538px;
     padding: 32px 42px;
@@ -83,6 +82,8 @@
     }
     &.active {
         display: block;
+        position: fixed;
+        overflow: auto;
         height: 407px;
         bottom: calc(50% - 200px);
     }
