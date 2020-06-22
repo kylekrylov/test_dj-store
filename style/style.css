@@ -80,7 +80,8 @@ header {
   background: #EBEEF5;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
 
 .header {
   height: 90px;
@@ -254,6 +255,7 @@ header {
       display: none; }
     .header_menu-mob {
       position: absolute;
+      overflow: auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -277,7 +279,8 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        position: relative; }
+        position: relative;
+        overflow: auto; }
         .header_menu-mob li a {
           padding: 0 0 0 24px;
           font-style: normal;
