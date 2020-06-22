@@ -268,7 +268,7 @@ header {
       background: #EBEEF5;
       position: fixed;
       right: -375px;
-      top: 90px;
+      top: 115px;
       overflow: auto;
       -webkit-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
       -o-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
@@ -465,6 +465,23 @@ header {
         height: 343px;
         bottom: calc(50% - 161px); } }
 
+.block5 {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.electro_voice0,
+.electro_voice1 {
+  max-height: 620px; }
+  .electro_voice0 img,
+  .electro_voice1 img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain; }
+
 .block-slider {
   height: 624px;
-  background: url(../img/bgr1.jpg) no-repeat center; }
+  background: url(../img/bgr-slider.jpg) no-repeat center; }

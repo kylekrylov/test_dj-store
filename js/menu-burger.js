@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('.header_burger,.header_menu-mob,.modal-pop').toggleClass('active');
         // $('.content').removeClass('opacity')
     });
-    $('.modal-pop button.close').click(function(e) {
+    $('.modal-pop button.close,.content').click(function(e) {
         $('.header_burger,.header_menu-mob,.modal-pop').removeClass('active');
         $('body').removeClass('lock')
             // $('.content').removeClass('opacity')

@@ -1,0 +1,19 @@
+.block5 {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.electro_voice0,
+.electro_voice1 {
+    max-height: 620px;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.electro_voice0 {}
+
+.electro_voice1 {}
