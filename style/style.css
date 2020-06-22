@@ -58,7 +58,6 @@ body {
     background: #333;
     margin-top: auto; }
     body footer p {
-      font-size: 20px;
       text-align: center;
       color: #444; }
   @media (max-width: 1200px) {
@@ -342,6 +341,7 @@ header {
               left: -18px; } }
 
 .modal-pop {
+  display: none;
   height: 407px;
   width: 538px;
   padding: 32px 42px;
@@ -349,7 +349,7 @@ header {
   border-radius: 16px;
   position: absolute;
   left: calc(50% - 269px);
-  bottom: -410px;
+  bottom: -510px;
   -webkit-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
   -o-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
   transition: all 0.3s cubic-bezier(0, 0.9, 1, 1); }
@@ -431,7 +431,7 @@ header {
       height: 343px;
       width: 346px;
       padding: 32px 16px;
-      left: calc(50% - 183px);
+      left: calc(50% - 173px);
       bottom: -343px; }
       .modal-pop button.close {
         top: 20px;
