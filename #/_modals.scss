@@ -8,7 +8,7 @@
     position: absolute;
     left: calc(50% - 269px);
     bottom: -510px;
-    transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
+    transition: all 0.3s ease;
     button.close {
         // !! заменить крестик 
         position: absolute;
@@ -42,12 +42,14 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 29px;
+        transition: all 0.3s ease;
     }
     p {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 160%;
+        transition: all 0.3s ease;
     }
     form {
         display: flex;
@@ -59,6 +61,7 @@
             width: 454px;
             margin: 16px;
             padding: 15px;
+            transition: all 0.3s ease;
         }
         input {
             margin: 16px auto;

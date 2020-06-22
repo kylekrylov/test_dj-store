@@ -7,8 +7,8 @@
 
 .electro_voice0,
 .electro_voice1 {
-    width: 50%;
-    height: 50vw;
+    width: 50vw;
+    height: 32.3vw;
 }
 
 .electro_voice0 {
@@ -19,12 +19,12 @@
     background: url(../img/Electro_Voice_EVID0.png) 20% 5%/10% no-repeat, url(../img/Electro_Voice_EVID1.png) 80% 5%/10% no-repeat, url(../img/electro_voice1.jpg) 0 0/100% auto no-repeat;
 }
 
-.loudspeakers {
+.electro_voice1 {
     position: relative;
     img {
         position: absolute;
         // height: 100%;
-        // left: 20%;
-        // top: 20px;
+        left: 20%;
+        top: 5%;
     }
 }

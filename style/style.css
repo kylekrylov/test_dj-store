@@ -347,9 +347,9 @@ header {
   position: absolute;
   left: calc(50% - 269px);
   bottom: -510px;
-  -webkit-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
-  -o-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
-  transition: all 0.3s cubic-bezier(0, 0.9, 1, 1); }
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .modal-pop button.close {
     position: absolute;
     background: #fff;
@@ -378,12 +378,18 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 29px; }
+    line-height: 29px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .modal-pop p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 160%; }
+    line-height: 160%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .modal-pop form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -400,7 +406,10 @@ header {
       height: 48px;
       width: 454px;
       margin: 16px;
-      padding: 15px; }
+      padding: 15px;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     .modal-pop form input {
       margin: 16px auto;
       border: 1px solid rgba(0, 0, 0, 0.2);
@@ -474,8 +483,8 @@ header {
 
 .electro_voice0,
 .electro_voice1 {
-  width: 50%;
-  height: 50vw; }
+  width: 50vw;
+  height: 32.3vw; }
 
 .electro_voice0 {
   background: url(../img/electro_voice0.jpg) 0 0/100% auto no-repeat; }
@@ -483,11 +492,13 @@ header {
 .electro_voice1 {
   background: url(../img/Electro_Voice_EVID0.png) 20% 5%/10% no-repeat, url(../img/Electro_Voice_EVID1.png) 80% 5%/10% no-repeat, url(../img/electro_voice1.jpg) 0 0/100% auto no-repeat; }
 
-.loudspeakers {
+.electro_voice1 {
   position: relative; }
-  .loudspeakers img {
-    position: absolute; }
+  .electro_voice1 img {
+    position: absolute;
+    left: 20%;
+    top: 5%; }
 
 .block-slider {
-  height: 624px;
-  background: url(../img/bgr-slider.jpg) no-repeat center; }
+  height: 620px;
+  background: url(../img/bgr-slider.jpg) center no-repeat; }
