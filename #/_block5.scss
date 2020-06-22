@@ -1,19 +1,36 @@
 .block5 {
     max-width: 1920px;
+    max-height: 620px;
     margin: 0 auto;
     display: flex;
+    flex: 2 50%;
 }
 
 .electro_voice0,
 .electro_voice1 {
-    max-height: 620px;
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-    }
+    width: 50%;
+    height: 50vw;
+    // img {
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: contain;
+    // }
 }
 
-.electro_voice0 {}
+.electro_voice0 {
+    background: url(../img/electro_voice0.jpg) 0 0/100% auto no-repeat;
+}
 
-.electro_voice1 {}
+.electro_voice1 {
+    background: url(../img/Electro_Voice_EVID0.png) 20% 5%/10% no-repeat, url(../img/Electro_Voice_EVID1.png) 80% 5%/10% no-repeat, url(../img/electro_voice1.jpg) 0 0/100% auto no-repeat;
+}
+
+.loudspeakers {
+    position: relative;
+    img {
+        position: absolute;
+        // height: 100%;
+        // left: 20%;
+        // top: 20px;
+    }
+}
