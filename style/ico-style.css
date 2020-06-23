@@ -58,7 +58,7 @@
 .icon-ellipse-plus .path3:before {
     content: "\e906";
     margin-left: -1em;
-    color: rgb(57, 125, 255);
+    color: #397dff;
 }
 
 .icon-ellipse-plus .path4:before {
@@ -68,7 +68,7 @@
 }
 
 .icon-gotovie-resheniya:before {
-    font-family: 'icomoon' !important;
+    font-family: 'icomoon';
     content: "\e908";
 }
 
@@ -81,8 +81,8 @@
 }
 
 .icon-home:before {
+    font-family: 'icomoon';
     content: "\e90b";
-    color: #397dff;
 }
 
 .icon-lamp:before {
@@ -90,6 +90,7 @@
 }
 
 .icon-mail_icon:before {
+    font-family: 'icomoon';
     content: "\e90d";
 }
 

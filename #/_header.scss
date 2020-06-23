@@ -82,6 +82,9 @@ header {
                 display: flex;
                 align-items: center;
                 color: #2B2D3A;
+                &:hover {
+                    color: #397DFF;
+                }
                 &.modal-call {
                     font-style: normal;
                     font-weight: normal;
