@@ -26,3 +26,10 @@ $(document).ready(function() {
     });
 
 });
+$(document).ready(function() {
+    $('.block-slider_right_block').slick({
+        // infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+    });
+});
