@@ -1,14 +1,17 @@
 *,
 *::after,
 *::before {
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 :focus,
-:active,
+ :active,
 a:focus,
 a:active {
     outline: none;
@@ -60,13 +63,17 @@ body {
     min-height: 100vh;
     background: #fff;
     footer {
-        height: 20px;
         background: #EBEEF5;
         height: 90px;
         margin-top: auto;
         p {
             text-align: center;
             color: #444;
+        }
+        .footer_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     @media (max-width: 1200px) {

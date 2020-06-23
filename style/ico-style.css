@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?1cacjb');
-    src: url('../fonts/icomoon.eot?1cacjb#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?1cacjb') format('truetype'), url('../fonts/icomoon.woff?1cacjb') format('woff'), url('../fonts/icomoon.svg?1cacjb#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?pwahcp');
+    src: url('../fonts/icomoon.eot?pwahcp#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?pwahcp') format('truetype'), url('../fonts/icomoon.woff?pwahcp') format('woff'), url('../fonts/icomoon.svg?pwahcp#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -9,7 +9,6 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: never;
     font-style: normal;
@@ -17,96 +16,56 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
 }
 
-.icon-about-company:before {
+[class^="icon-"]:hover,
+[class*=" icon-"]:hover {
+    color: #397DFF;
+}
+
+.icon-chevron-left:before {
     content: "\e900";
 }
 
-.icon-ellipse:before {
+.icon-chevron-right:before {
     content: "\e901";
-    color: #397dff;
 }
 
-.icon-ellipse-modal .path1:before {
+.icon-circle:before {
     content: "\e902";
-    color: rgb(57, 125, 255);
 }
 
-.icon-ellipse-modal .path2:before {
+.icon-copy:before {
     content: "\e903";
-    margin-left: -1em;
-    color: rgb(57, 125, 255);
-    opacity: 0.15;
-}
-
-.icon-ellipse-plus .path1:before {
-    content: "\e904";
-    color: rgb(57, 125, 255);
-    opacity: 0.15;
-}
-
-.icon-ellipse-plus .path2:before {
-    content: "\e905";
-    margin-left: -1em;
-    color: none;
-}
-
-.icon-ellipse-plus .path3:before {
-    content: "\e906";
-    margin-left: -1em;
-    color: #397dff;
-}
-
-.icon-ellipse-plus .path4:before {
-    content: "\e907";
-    margin-left: -1em;
-    color: none;
-}
-
-.icon-gotovie-resheniya:before {
-    font-family: 'icomoon';
-    content: "\e908";
-}
-
-.icon-header-mail:before {
-    content: "\e909";
-}
-
-.icon-header-tel:before {
-    content: "\e90a";
 }
 
 .icon-home:before {
-    font-family: 'icomoon';
-    content: "\e90b";
+    content: "\e904";
 }
 
-.icon-lamp:before {
-    content: "\e90c";
+.icon-layers:before {
+    content: "\e905";
 }
 
-.icon-mail_icon:before {
-    font-family: 'icomoon';
-    content: "\e90d";
+.icon-link:before {
+    content: "\e906";
 }
 
-.icon-map-pin:before {
-    content: "\e90e";
+.icon-mail:before {
+    content: "\e907";
 }
 
-.icon-phone_icon:before {
-    content: "\e90f";
+.icon-phone:before {
+    content: "\e908";
 }
 
-.icon-plus:before {
-    content: "\e910";
-    color: #397dff;
+.icon-square:before {
+    content: "\e909";
 }
 
-.icon-projects:before {
-    content: "\e911";
+.icon-triangle:before {
+    content: "\e90a";
 }
