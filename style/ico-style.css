@@ -68,6 +68,7 @@
 }
 
 .icon-gotovie-resheniya:before {
+    font-family: 'icomoon' !important;
     content: "\e908";
 }
 
