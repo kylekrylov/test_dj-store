@@ -66,14 +66,12 @@ body {
         background: #EBEEF5;
         height: 90px;
         margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         p {
             text-align: center;
             color: #444;
-        }
-        .footer_logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
     @media (max-width: 1200px) {

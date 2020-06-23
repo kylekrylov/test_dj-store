@@ -59,20 +59,19 @@ body {
   body footer {
     background: #EBEEF5;
     height: 90px;
-    margin-top: auto; }
+    margin-top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     body footer p {
       text-align: center;
       color: #444; }
-    body footer .footer_logo {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
   @media (max-width: 1200px) {
     body.lock {
       overflow: hidden; }
