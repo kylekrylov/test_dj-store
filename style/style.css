@@ -398,6 +398,8 @@ header {
     padding: 32px 42px;
     background: #fff;
     border-radius: 16px;
+    -webkit-box-shadow: 0px 3px 11px 10px #00000033;
+    box-shadow: 0px 3px 11px 10px #00000033;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -557,6 +559,8 @@ header {
     background: #fff;
     padding: 17px 24px;
     border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 11px 10px #00000033;
+    box-shadow: 0px 3px 11px 10px #00000033;
     display: none; }
     .modal_electro-voice_hover-block h2 {
       font-style: normal;
@@ -741,7 +745,7 @@ header {
   min-width: 676px; }
 
 .slick-active:not(.slick-current) {
-  opacity: 0.4; }
+  opacity: 0.3; }
 
 @media (max-width: 767px) {
   .block-slider {
