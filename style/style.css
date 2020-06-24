@@ -531,7 +531,7 @@ header {
 .electro-voice0,
 .electro-voice1 {
   width: 50vw;
-  height: 31.9vw;
+  height: 31.6vw;
   max-height: 620px; }
 
 .electro-voice0 {
@@ -747,7 +747,7 @@ header {
 .slick-active:not(.slick-current) {
   opacity: 0.3; }
 
-@media (max-width: 767px) {
+@media (max-width: 850px) {
   .block-slider {
     display: -webkit-box;
     display: -ms-flexbox;
