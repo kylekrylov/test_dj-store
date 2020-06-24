@@ -3,8 +3,8 @@
 $(document).ready(function() {
     $('.header_burger ').click(function() {
         $('.header_burger,.header_menu-mob').toggleClass('active');
-        // $('body').toggleClass('lock')
-        // $('.content').toggleClass('opacity')
+        $('body').toggleClass('lock')
+            // $('.content').toggleClass('opacity')
     });
 });
 $(document).ready(function() {
@@ -14,10 +14,8 @@ $(document).ready(function() {
     });
     $('.close').click(function() {
         $('.modal-pop').removeClass('active');
+        $('body').removeClass('lock')
     });
-    // $('.modal-pop').click(function() {
-    //     $('.modal-pop').not('.modal-pop-wraper').removeClass('active');
-    // });
 });
 
 $(document).ready(function() {
