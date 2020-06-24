@@ -170,26 +170,24 @@ header {
             top: 115px;
             right: -375px;
             overflow: auto;
-            // height: 100%;
-            display: flex;
-            flex-direction: column;
             width: 375px;
             padding: 0px 16px 0 16px;
             background: #EBEEF5;
+            display: flex;
+            flex-direction: column;
             transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
             &.active {
                 right: 0px;
             }
             ul {
                 overflow: auto;
-                height: 100vh;
+                height: calc(100vh - 115px);
                 li {
                     width: 100%;
                     height: 72px;
                     display: flex;
                     align-items: center;
                     position: relative;
-                    overflow: auto;
                     a {
                         padding: 0 0 0 24px;
                         font-style: normal;

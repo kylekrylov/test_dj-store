@@ -277,6 +277,9 @@ header {
       top: 115px;
       right: -375px;
       overflow: auto;
+      width: 375px;
+      padding: 0px 16px 0 16px;
+      background: #EBEEF5;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -284,9 +287,6 @@ header {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      width: 375px;
-      padding: 0px 16px 0 16px;
-      background: #EBEEF5;
       -webkit-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
       -o-transition: all 0.3s cubic-bezier(0, 0.9, 1, 1);
       transition: all 0.3s cubic-bezier(0, 0.9, 1, 1); }
@@ -294,7 +294,7 @@ header {
         right: 0px; }
       .header_menu-mob ul {
         overflow: auto;
-        height: 100vh; }
+        height: calc(100vh - 115px); }
         .header_menu-mob ul li {
           width: 100%;
           height: 72px;
@@ -304,8 +304,7 @@ header {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          position: relative;
-          overflow: auto; }
+          position: relative; }
           .header_menu-mob ul li a {
             padding: 0 0 0 24px;
             font-style: normal;
@@ -379,140 +378,145 @@ header {
   bottom: -2px; }
 
 .modal-pop {
-  display: none;
-  height: 407px;
-  width: 538px;
-  padding: 32px 42px;
-  background: #fff;
-  border-radius: 16px;
-  position: absolute;
-  left: calc(50% - 269px);
-  bottom: -510px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-  .modal-pop button.close {
-    position: absolute;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 101;
+  display: none; }
+  .modal-pop-wraper {
+    height: 407px;
+    width: 538px;
+    padding: 32px 42px;
     background: #fff;
-    top: 20px;
-    right: 30px;
-    width: 18px;
-    height: 14px; }
-    .modal-pop button.close:before, .modal-pop button.close:after {
-      content: "";
+    border-radius: 16px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative; }
+    .modal-pop-wraper button.close {
       position: absolute;
-      background-color: #2B2D3A;
-      width: 100%;
-      height: 2px;
-      border-radius: 23px; }
-    .modal-pop button.close:before {
-      top: 6px;
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
-    .modal-pop button.close:after {
-      bottom: 6px;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
-  .modal-pop h2 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .modal-pop p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 160%;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .modal-pop form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .modal-pop form input,
-    .modal-pop form button {
-      height: 48px;
-      width: 454px;
-      margin: 16px;
-      padding: 15px;
+      background: #fff;
+      top: 20px;
+      right: 30px;
+      width: 18px;
+      height: 14px; }
+      .modal-pop-wraper button.close:before, .modal-pop-wraper button.close:after {
+        content: "";
+        position: absolute;
+        background-color: #2B2D3A;
+        width: 100%;
+        height: 2px;
+        border-radius: 23px; }
+      .modal-pop-wraper button.close:before {
+        top: 6px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+      .modal-pop-wraper button.close:after {
+        bottom: 6px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .modal-pop-wraper h2 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-    .modal-pop form input {
-      margin: 16px auto;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      border-radius: 9px;
+    .modal-pop-wraper p {
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
-      line-height: 114%; }
-    .modal-pop form button {
-      background: #397DFF;
-      margin: 16px auto;
-      border-radius: 8px;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-      color: #FFFFFF; }
+      line-height: 160%;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .modal-pop-wraper form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .modal-pop-wraper form input,
+      .modal-pop-wraper form button {
+        height: 48px;
+        width: 454px;
+        margin: 16px;
+        padding: 15px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .modal-pop-wraper form input {
+        margin: 16px auto;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 9px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 114%; }
+      .modal-pop-wraper form button {
+        background: #397DFF;
+        margin: 16px auto;
+        border-radius: 8px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF; }
   .modal-pop.active {
-    display: block;
-    position: fixed;
-    overflow: auto;
-    height: 407px;
-    bottom: calc(50% - 200px); }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   @media (max-width: 768px) {
-    .modal-pop {
+    .modal-pop-wraper {
       border-radius: 12px;
       height: 343px;
       width: 346px;
-      padding: 32px 16px;
-      left: calc(50% - 173px);
-      bottom: -343px; }
-      .modal-pop button.close {
+      padding: 32px 16px; }
+      .modal-pop-wraper button.close {
         top: 20px;
         right: 30px;
         width: 18px;
         height: 14px; }
-      .modal-pop h2 {
+      .modal-pop-wraper h2 {
         font-size: 21px;
         line-height: 26px; }
-      .modal-pop p {
+      .modal-pop-wraper p {
         font-size: 12px; }
-      .modal-pop form input,
-      .modal-pop form button {
+      .modal-pop-wraper form input,
+      .modal-pop-wraper form button {
         height: 42px;
         width: 311px;
         margin: 16px;
         padding: 12px; }
-      .modal-pop form input {
+      .modal-pop-wraper form input {
         margin: 8px auto;
         border-radius: 9px;
         font-size: 14px;
         line-height: 114%; }
-      .modal-pop form button {
+      .modal-pop-wraper form button {
         background: #397DFF;
         margin: 8px auto;
         border-radius: 8px;
         font-weight: 500;
         font-size: 16px;
-        line-height: 20px; }
-      .modal-pop.active {
-        height: 343px;
-        bottom: calc(50% - 161px); } }
+        line-height: 20px; } }
 
 .block5 {
   max-width: 1920px;
@@ -762,6 +766,13 @@ header {
         .block-slider_left_block p {
           font-size: 14px;
           margin: 0 0 0 0; }
+        .block-slider_left_block .mob_contact {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
   .slick-slider {
     bottom: 80px;
     right: -30vw; }
