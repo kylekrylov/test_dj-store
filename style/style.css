@@ -757,7 +757,10 @@ header {
     -ms-flex-direction: column;
     flex-direction: column; }
     .block-slider_left {
-      margin-top: 20px; }
+      margin-top: 20px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .block-slider_left_block {
         text-align: center; }
         .block-slider_left_block h2 {
